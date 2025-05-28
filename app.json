@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FirstProgram",
-    "slug": "FirstProgram",
+    "slug": "firstprogram",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,16 +10,21 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "android": {
+        "permissions": ["CAMERA"]
+      }
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.FirstProgram"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.FirstProgram"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +36,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "53509050-cde5-4342-bddf-65c800d5edff"
+      }
+    },
+    "owner": "muhammad_touseef"
   }
 }
